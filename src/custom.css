@@ -1,0 +1,59 @@
+/* src/custom.css */
+
+/* --- Reset cơ bản và Thiết lập toàn cục --- */
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #f8f9fa;
+    /* Màu nền này sẽ bao phủ toàn bộ */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* --- Layout chính của ứng dụng --- */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Đảm bảo ứng dụng luôn cao ít nhất bằng chiều cao màn hình */
+}
+
+main {
+    flex-grow: 1;
+    /* Giúp main (nội dung chính) chiếm hết không gian còn lại */
+    width: 100%;
+    /* Đảm bảo main chiếm 100% chiều rộng */
+}
+
+
+/* --- Hiệu ứng khi hover vào thẻ sản phẩm --- */
+.product-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: none;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Đảm bảo ảnh sản phẩm có chiều cao đồng nhất */
+.product-card-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Nút yêu thích */
+.favorite-btn {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/* Khung gợi ý AI */
+.suggestion-box {
+    background-color: #e9f5ff;
+    border: 1px solid #bde0fe;
+}
