@@ -31,7 +31,10 @@ If you are developing a production application, we recommend using TypeScript wi
 *   **Quản lý dữ liệu**: `React Context`
 *   **Công cụ phát triển**: `Vite`
 
----
+## Phiên bản dùng trong dự án
+1.node -v 20.9.0
+2.vite: 5.2.0
+
 
 **Các bước thực hiện:**
 
