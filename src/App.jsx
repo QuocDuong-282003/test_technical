@@ -8,7 +8,7 @@ import HomePage from './pages/HomePage.jsx';
 import FavoritesPage from './pages/FavoritesPage.jsx';
 import HistoryPage from './pages/HistoryPage.jsx';
 import CartPage from './pages/CartPage.jsx';
-
+import CheckoutPage from './pages/payment/CheckoutPage.jsx';
 function App() {
   return (
     <AppProvider>
@@ -21,6 +21,7 @@ function App() {
             <Route path="/favorites" element={<FavoritesPage />} />
             <Route path="/history" element={<HistoryPage />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
           </Routes>
         </main>
         <Footer />

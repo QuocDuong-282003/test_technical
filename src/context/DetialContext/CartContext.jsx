@@ -37,8 +37,11 @@ export const CartProvider = ({ children }) => {
             );
         });
     };
+    const clearCart = () => {
+        setCart([]); // Đơn giản là đặt giỏ hàng thành một mảng rỗng
+    };
 
-    const value = { cart, addToCart, removeFromCart, updateCartQuantity };
+    const value = { cart, addToCart, removeFromCart, updateCartQuantity, clearCart };
 
     return (
         <CartContext.Provider value={value}>

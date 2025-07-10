@@ -2,7 +2,7 @@ import React from 'react';
 import { useCart } from '../context/DetialContext/CartContext';
 import { FaTrash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
+import { Button } from 'react-bootstrap';
 const CartPage = () => {
     const { cart, removeFromCart } = useCart();
 
@@ -64,9 +64,14 @@ const CartPage = () => {
                                 <span>Tạm tính ({cart.length} sản phẩm)</span>
                                 <span className="fw-bold">{formatPrice(cartTotal)}</span>
                             </div>
-                            <button className="btn btn-primary w-100 mt-3 fs-5">
+                            <Button
+                                as={Link}
+                                to="/checkout"
+                                variant="primary"
+                                className="w-100 mt-3 fs-5"
+                            >
                                 Tiến hành thanh toán
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>
